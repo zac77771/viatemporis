@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact &amp; Booking | Via Temporis Split</title>
+    <meta name="description"
+        content="Book your private transfer or tour from Split — phone, email, WhatsApp or online form. Available 24/7.">
+
+    <meta property="og:title" content="Contact | Via Temporis Split">
+    <meta property="og:description" content="Book a private transfer or tour — available 24/7 via WhatsApp and Viber.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="hr" href="https://viatemporis.hr/kontakt.html">
+    <link rel="alternate" hreflang="en" href="https://viatemporis.hr/en/contact.html">
+    <link rel="alternate" hreflang="x-default" href="https://viatemporis.hr/kontakt.html">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">VIA TEMPORIS</div>
+
+            <nav id="mobileNav">
+                <a href="index.html">Home</a>
+                <a href="prices.html">Prices</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="lang-switcher">
+                <a href="../kontakt.html" class="lang-btn">HR</a>
+                <a href="contact.html" class="lang-btn active">EN</a>
+            </div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">Contact &amp; Booking</h2>
+
+        <div class="contact-wrapper">
+
+            <!-- LEFT: CONTACT INFO -->
+            <div class="card contact-info">
+                <h3>Contact Info</h3>
+
+                <p>
+                    <strong>📞 Phone:</strong><br>
+                    <a href="tel:+385993352182">+385 99 335 2182</a>
+                </p>
+
+                <p>
+                    <strong>✉️ Email:</strong><br>
+                    <a href="mailto:info@viatemporis.hr">info@viatemporis.hr</a>
+                </p>
+
+                <p>
+                    <strong>📍 Location:</strong><br>
+                    Split, Croatia
+                </p>
+
+                <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+
+                <p>We are available 24/7 via WhatsApp and Viber for quick inquiries.</p>
+
+                <p>
+                    <a href="https://wa.me/385993352182" class="cta-btn cta-whatsapp">WhatsApp</a>
+                    <a href="viber://chat?number=%2B385993352182" class="cta-btn">Viber</a>
+                </p>
+            </div>
+
+            <!-- RIGHT: BOOKING FORM -->
+            <div class="booking-form card">
+                <h3>Book Now</h3>
+
+                <!--
+                  Form uses Web3Forms (free, no backend required).
+                  1) Go to https://web3forms.com
+                  2) Enter your email to get an access_key
+                  3) Paste it into value="..." below
+                -->
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="YOUR-WEB3FORMS-KEY-HERE">
+                    <input type="hidden" name="subject" value="New Booking - Via Temporis">
+                    <input type="hidden" name="from_name" value="Via Temporis Web (EN)">
+                    <input type="checkbox" name="botcheck" style="display:none;">
+
+                    <div class="form-row">
+                        <input type="text" name="name" required placeholder="Full Name">
+                        <input type="email" name="email" required placeholder="Email">
+                    </div>
+
+                    <div class="form-row">
+                        <input type="text" name="pickup" required placeholder="Pickup Location">
+                        <input type="text" name="destination" required placeholder="Destination">
+                    </div>
+
+                    <div class="form-row">
+                        <input type="date" name="date" required>
+                        <select name="passengers" required>
+                            <option value="">Number of passengers</option>
+                            <option value="1-3">1-3</option>
+                            <option value="4-7">4-7 persons (V-Class)</option>
+                            <option value="8-15">8-15 persons (2 vans)</option>
+                        </select>
+                    </div>
+
+                    <textarea name="notes" rows="4" placeholder="Notes (flight number, baby seat, etc.)"></textarea>
+
+                    <button type="submit">Send Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo-footer">VIA TEMPORIS SPLIT</div>
+        <p>Professional Private Transfers &amp; Tours</p>
+        <p class="copyright">&copy; 2026 All rights reserved</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
